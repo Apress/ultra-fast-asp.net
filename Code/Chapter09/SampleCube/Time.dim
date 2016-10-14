@@ -1,0 +1,479 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="a6e5df6c-1fff-4fed-b258-51c51e6ae111" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Time</ID>
+  <Name>Time</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="TimeBinding" dwd:design-time-name="1653248a-a333-4685-b0e6-f3159248ea8a">
+    <CalendarStartDate>2008-10-01T00:00:00Z</CalendarStartDate>
+    <CalendarEndDate>2009-12-30T11:00:00Z</CalendarEndDate>
+  </Source>
+  <Type>Time</Type>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Attributes>
+    <Attribute dwd:design-time-name="a32819dd-a2c2-4535-a710-95b3bca59f0b">
+      <ID>Date</ID>
+      <Name>Date</Name>
+      <Type>Days</Type>
+      <Usage>Key</Usage>
+      <EstimatedCount>455</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="7b170354-71a5-45d6-b7b1-6a1c70ecc0b3">
+          <DataType>Date</DataType>
+          <Source xsi:type="TimeAttributeBinding" dwd:design-time-name="07bfb172-c28e-4491-8f16-bb14e1d3c70e" />
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="d2877a5c-ce9d-4155-9467-dc689413978c">
+        <DataType>WChar</DataType>
+      </NameColumn>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="0ea6223f-a6d2-4cfc-b1e1-fe5cfd9aafc5">
+          <AttributeID>Month</AttributeID>
+          <RelationshipType>Rigid</RelationshipType>
+          <Name>Month</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="4ec2b36b-4750-4add-af97-97a502522bc0">
+          <AttributeID>Month Of Year</AttributeID>
+          <RelationshipType>Rigid</RelationshipType>
+          <Name>Month Of Year</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="cefb7721-1ef2-43d8-8f8f-652481d9d79f">
+          <AttributeID>Month Of Half Year</AttributeID>
+          <RelationshipType>Rigid</RelationshipType>
+          <Name>Month Of Half Year</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="9ecc714b-314e-409d-b791-070f04ba033f">
+          <AttributeID>Month Of Quarter</AttributeID>
+          <RelationshipType>Rigid</RelationshipType>
+          <Name>Month Of Quarter</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="b9a9831d-291f-44fc-adf6-49319e9a8961">
+          <AttributeID>Week</AttributeID>
+          <RelationshipType>Rigid</RelationshipType>
+          <Name>Week</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="ea269df4-ba90-4531-8803-dc47930393d4">
+          <AttributeID>Week Of Year</AttributeID>
+          <RelationshipType>Rigid</RelationshipType>
+          <Name>Week Of Year</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="20c2d857-2c54-4e75-9597-9e7c57d20442">
+          <AttributeID>Day Of Year</AttributeID>
+          <Name>Day Of Year</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="e4640dbc-2225-4d80-bbeb-45e4d21bb63b">
+          <AttributeID>Day Of Half Year</AttributeID>
+          <Name>Day Of Half Year</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="59315e77-47c6-4fed-bb91-3ed6bda11c16">
+          <AttributeID>Day Of Quarter</AttributeID>
+          <Name>Day Of Quarter</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="125fe7cf-b269-4162-a2f1-067b43955f26">
+          <AttributeID>Day Of Month</AttributeID>
+          <Name>Day Of Month</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="80ae3b19-e0f7-4f5d-b407-ab7d0336f713">
+          <AttributeID>Day Of Week</AttributeID>
+          <Name>Day Of Week</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+    </Attribute>
+    <Attribute dwd:design-time-name="98b7d41c-e53b-4b25-aabb-c0a26f1ca09f">
+      <ID>Year</ID>
+      <Name>Year</Name>
+      <Type>Years</Type>
+      <EstimatedCount>456</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="aa4433cd-bc16-4f3d-a225-5ac0eabf0b26">
+          <DataType>Date</DataType>
+          <Source xsi:type="TimeAttributeBinding" dwd:design-time-name="509f4263-0e38-4645-8e69-047ac259a95f" />
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="792546b1-5a92-48d6-9914-397a69041728">
+        <DataType>WChar</DataType>
+      </NameColumn>
+      <OrderBy>Key</OrderBy>
+    </Attribute>
+    <Attribute dwd:design-time-name="d4762a99-0648-4c5c-af22-0e9d817cd7ea">
+      <ID>Half Year</ID>
+      <Name>Half Year</Name>
+      <Type>HalfYears</Type>
+      <EstimatedCount>456</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="75aa2669-6962-4752-8e54-e0c497d8b73a">
+          <DataType>Date</DataType>
+          <Source xsi:type="TimeAttributeBinding" dwd:design-time-name="52679da4-2693-446b-9b7f-aa08ce90cfb1" />
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="fd6173d5-d37f-4c4c-8c80-fd2df478b6c6">
+        <DataType>WChar</DataType>
+      </NameColumn>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="ff21aac6-422b-40f3-8f0a-f3a5fbdb6c2b">
+          <AttributeID>Year</AttributeID>
+          <RelationshipType>Rigid</RelationshipType>
+          <Name>Year</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+    </Attribute>
+    <Attribute dwd:design-time-name="f683230f-8473-4a5e-8e08-f0fd3eacad41">
+      <ID>Quarter</ID>
+      <Name>Quarter</Name>
+      <Type>Quarters</Type>
+      <EstimatedCount>456</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="efdadb7e-d18a-49e9-a675-2f3a93113627">
+          <DataType>Date</DataType>
+          <Source xsi:type="TimeAttributeBinding" dwd:design-time-name="44b1d14a-94b1-4c6a-a3c1-f753aa304b51" />
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="5e9c7c70-2fdd-47c0-b9ee-94634c0b543a">
+        <DataType>WChar</DataType>
+      </NameColumn>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="f3bbfd49-75f3-466f-962d-198d1ae9ce23">
+          <AttributeID>Half Year</AttributeID>
+          <RelationshipType>Rigid</RelationshipType>
+          <Name>Half Year</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="4d8ce003-3b89-45eb-a211-89c7a79efee2">
+          <AttributeID>Half Year Of Year</AttributeID>
+          <RelationshipType>Rigid</RelationshipType>
+          <Name>Half Year Of Year</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+    </Attribute>
+    <Attribute dwd:design-time-name="1bd40d6f-b87f-494c-b6a0-14bf03a6f586">
+      <ID>Month</ID>
+      <Name>Month</Name>
+      <Type>Months</Type>
+      <EstimatedCount>456</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="926147f0-6606-4806-b33a-69ff3c868412">
+          <DataType>Date</DataType>
+          <Source xsi:type="TimeAttributeBinding" dwd:design-time-name="7e773980-10fd-4b71-a28e-b8b2e43f8493" />
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="4519b646-88de-4986-be29-bf42a97ef00d">
+        <DataType>WChar</DataType>
+      </NameColumn>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="ea973352-277f-430a-a808-6c4545e1ec93">
+          <AttributeID>Quarter</AttributeID>
+          <RelationshipType>Rigid</RelationshipType>
+          <Name>Quarter</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="d213d723-3a9a-49ed-bf53-ad6add424743">
+          <AttributeID>Quarter Of Year</AttributeID>
+          <RelationshipType>Rigid</RelationshipType>
+          <Name>Quarter Of Year</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="102ad547-a8fb-49c4-ade8-5540a53f49b3">
+          <AttributeID>Quarter Of Half Year</AttributeID>
+          <RelationshipType>Rigid</RelationshipType>
+          <Name>Quarter Of Half Year</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+    </Attribute>
+    <Attribute dwd:design-time-name="e0de79a1-2ba9-46f8-92e6-c0af4f0f0b24">
+      <ID>Week</ID>
+      <Name>Week</Name>
+      <Type>Weeks</Type>
+      <EstimatedCount>456</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="9174c384-4a59-43b6-b123-8e7f03ceceae">
+          <DataType>Date</DataType>
+          <Source xsi:type="TimeAttributeBinding" dwd:design-time-name="bbbd89c2-b948-483d-9d5f-3a9ecb8d19d2" />
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="95d5db99-ebad-493e-a9c2-1a197d05cf8c">
+        <DataType>WChar</DataType>
+      </NameColumn>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="66a5f104-3546-48d3-a89f-53565f04ae3a">
+          <AttributeID>Year</AttributeID>
+          <RelationshipType>Rigid</RelationshipType>
+          <Name>Year</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+    </Attribute>
+    <Attribute dwd:design-time-name="780cf48f-a1a6-4d17-a848-548dde73c65f">
+      <ID>Day Of Year</ID>
+      <Name>Day Of Year</Name>
+      <Type>DayOfYear</Type>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="a1464f99-4f88-4577-bd7b-9d0de1f9cc91">
+          <DataType>Integer</DataType>
+          <Source xsi:type="TimeAttributeBinding" dwd:design-time-name="e3bd9558-e3ae-4ba4-9508-7b614a530cc9" />
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="9fb1ba73-0275-4362-98f7-2b2bd4fb476d">
+        <DataType>WChar</DataType>
+      </NameColumn>
+      <OrderBy>Key</OrderBy>
+    </Attribute>
+    <Attribute dwd:design-time-name="8679c7b5-51bc-4906-800f-664285ac77eb">
+      <ID>Day Of Half Year</ID>
+      <Name>Day Of Half Year</Name>
+      <Type>DayOfHalfYear</Type>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="85705886-30d5-4cf6-ac2c-60d0c18c1bd3">
+          <DataType>Integer</DataType>
+          <Source xsi:type="TimeAttributeBinding" dwd:design-time-name="48e58f88-8833-4b6c-8819-aa560c5a2351" />
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="b7cc634b-4eb2-45a5-82ec-4cb5b0e7c662">
+        <DataType>WChar</DataType>
+      </NameColumn>
+      <OrderBy>Key</OrderBy>
+    </Attribute>
+    <Attribute dwd:design-time-name="02649a29-29d4-46c0-8338-eb6ea4c1346d">
+      <ID>Day Of Quarter</ID>
+      <Name>Day Of Quarter</Name>
+      <Type>DayOfQuarter</Type>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="ecc4c3b5-035c-45c4-b98b-61d2181c2e27">
+          <DataType>Integer</DataType>
+          <Source xsi:type="TimeAttributeBinding" dwd:design-time-name="e87f2d21-d52b-4abd-96e0-cafbcbb0643c" />
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="d53d4bbf-3eb5-4481-bf91-3b3ff7317b41">
+        <DataType>WChar</DataType>
+      </NameColumn>
+      <OrderBy>Key</OrderBy>
+    </Attribute>
+    <Attribute dwd:design-time-name="0180b10b-b7c2-4cf3-a3e4-d85bcf7eaa7a">
+      <ID>Day Of Month</ID>
+      <Name>Day Of Month</Name>
+      <Type>DayOfMonth</Type>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="98d4c7aa-c266-474e-a42e-1f6c19040357">
+          <DataType>Integer</DataType>
+          <Source xsi:type="TimeAttributeBinding" dwd:design-time-name="aa1ed4f3-5095-4196-b9cb-ad96354cc239" />
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="d5e497c9-039f-4e6e-a3ae-a6f980c5430f">
+        <DataType>WChar</DataType>
+      </NameColumn>
+      <OrderBy>Key</OrderBy>
+    </Attribute>
+    <Attribute dwd:design-time-name="45c7f472-5cd7-4402-9be0-d29c22b7b2b5">
+      <ID>Day Of Week</ID>
+      <Name>Day Of Week</Name>
+      <Type>DayOfWeek</Type>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="d5ddabce-46f8-4bd2-b838-aa949ee537d3">
+          <DataType>Integer</DataType>
+          <Source xsi:type="TimeAttributeBinding" dwd:design-time-name="caf13dfd-dd23-4787-a6d1-d8d05b8375a0" />
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="fe2e3430-09ed-496a-90ee-aa221e5ce3cc">
+        <DataType>WChar</DataType>
+      </NameColumn>
+      <OrderBy>Key</OrderBy>
+    </Attribute>
+    <Attribute dwd:design-time-name="862ad92f-2711-414b-b683-c36a646425b7">
+      <ID>Week Of Year</ID>
+      <Name>Week Of Year</Name>
+      <Type>WeekOfYear</Type>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="99c7bd6f-ebde-4348-99e6-22520b999ad4">
+          <DataType>Integer</DataType>
+          <Source xsi:type="TimeAttributeBinding" dwd:design-time-name="00bee5c6-89f0-4d83-bd4e-320534f43180" />
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="18681b55-c1c2-48e2-935c-83738e49c5f3">
+        <DataType>WChar</DataType>
+      </NameColumn>
+      <OrderBy>Key</OrderBy>
+    </Attribute>
+    <Attribute dwd:design-time-name="7b1d4828-f2cf-40c3-b27e-a26dcd0019d0">
+      <ID>Month Of Year</ID>
+      <Name>Month Of Year</Name>
+      <Type>MonthOfYear</Type>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="18a893d2-83ab-4cbe-9db1-c321bb19c01a">
+          <DataType>Integer</DataType>
+          <Source xsi:type="TimeAttributeBinding" dwd:design-time-name="345c0503-fa9c-406e-8c55-a899a99b65e9" />
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="b4c2b3b7-580b-4f84-b33a-31869229d97e">
+        <DataType>WChar</DataType>
+      </NameColumn>
+      <OrderBy>Key</OrderBy>
+    </Attribute>
+    <Attribute dwd:design-time-name="0ffdb4d6-0879-4036-8a9e-bee43511329c">
+      <ID>Month Of Half Year</ID>
+      <Name>Month Of Half Year</Name>
+      <Type>MonthOfHalfYear</Type>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="e17e9d07-587e-4095-9b5f-2bf20d887128">
+          <DataType>Integer</DataType>
+          <Source xsi:type="TimeAttributeBinding" dwd:design-time-name="f82461dd-9f11-4dee-a5fd-f550aa1708e6" />
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="420b1bb9-ba5f-45ca-9720-3d42229a148f">
+        <DataType>WChar</DataType>
+      </NameColumn>
+      <OrderBy>Key</OrderBy>
+    </Attribute>
+    <Attribute dwd:design-time-name="a4a36a74-fd9b-4049-89fc-510ebcd51605">
+      <ID>Month Of Quarter</ID>
+      <Name>Month Of Quarter</Name>
+      <Type>MonthOfQuarter</Type>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="415dcd7b-11cc-4176-b250-0bb8848f7ed9">
+          <DataType>Integer</DataType>
+          <Source xsi:type="TimeAttributeBinding" dwd:design-time-name="38fa5d6c-106e-4e9b-82de-06130d3f7800" />
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="575f42e4-3f7a-4a71-9f4f-c70f575880b4">
+        <DataType>WChar</DataType>
+      </NameColumn>
+      <OrderBy>Key</OrderBy>
+    </Attribute>
+    <Attribute dwd:design-time-name="51af1909-ed96-411a-b639-7a15994ebda2">
+      <ID>Quarter Of Year</ID>
+      <Name>Quarter Of Year</Name>
+      <Type>QuarterOfYear</Type>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="a551279f-65f9-4afb-b667-7a1a23f84131">
+          <DataType>Integer</DataType>
+          <Source xsi:type="TimeAttributeBinding" dwd:design-time-name="0517961e-22d3-4263-98f6-6e31e90ade64" />
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="0ca75e4c-ef6d-45be-bbd5-7af7fb27abed">
+        <DataType>WChar</DataType>
+      </NameColumn>
+      <OrderBy>Key</OrderBy>
+    </Attribute>
+    <Attribute dwd:design-time-name="00244e6f-3719-4fa2-8658-67ca50b7780d">
+      <ID>Quarter Of Half Year</ID>
+      <Name>Quarter Of Half Year</Name>
+      <Type>QuarterOfHalfYear</Type>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="378f96d0-ebec-4970-8981-c2eb0f1cb6a2">
+          <DataType>Integer</DataType>
+          <Source xsi:type="TimeAttributeBinding" dwd:design-time-name="49aedc81-3efa-45dd-bd65-d93544342518" />
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="954315fc-d1c9-4a86-867a-8e89543e904c">
+        <DataType>WChar</DataType>
+      </NameColumn>
+      <OrderBy>Key</OrderBy>
+    </Attribute>
+    <Attribute dwd:design-time-name="2c7cc6a3-2818-4dff-bca4-42b2bb9d09e7">
+      <ID>Half Year Of Year</ID>
+      <Name>Half Year Of Year</Name>
+      <Type>HalfYearOfYear</Type>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="5a2924f3-bf79-4b5c-866e-054b88c7ccf9">
+          <DataType>Integer</DataType>
+          <Source xsi:type="TimeAttributeBinding" dwd:design-time-name="a2090305-77d6-4042-835d-4610054f21ff" />
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="51371b4e-31e0-4b58-95aa-b960930ccc8c">
+        <DataType>WChar</DataType>
+      </NameColumn>
+      <OrderBy>Key</OrderBy>
+    </Attribute>
+  </Attributes>
+  <Hierarchies>
+    <Hierarchy dwd:design-time-name="92145d43-86ba-4c07-a352-64d5cd8ba713">
+      <ID>Year -  Half Year -  Quarter -  Month -  Date</ID>
+      <Name>Year -  Half Year -  Quarter -  Month -  Date</Name>
+      <Levels>
+        <Level dwd:design-time-name="a2fd672d-6d43-4fcb-94b2-36350a231f2b">
+          <ID>Year</ID>
+          <Name>Year</Name>
+          <SourceAttributeID>Year</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="a91e96a7-833f-402d-af91-54dceb464785">
+          <ID>Half Year</ID>
+          <Name>Half Year</Name>
+          <SourceAttributeID>Half Year</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="5498f9d5-54bb-4334-920a-a79e8cc633c9">
+          <ID>Quarter</ID>
+          <Name>Quarter</Name>
+          <SourceAttributeID>Quarter</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="f6fa261a-a957-4e59-baea-ac8e2f7abd71">
+          <ID>Month</ID>
+          <Name>Month</Name>
+          <SourceAttributeID>Month</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="5f835acc-8544-45ea-b065-586c44d20d62">
+          <ID>Date</ID>
+          <Name>Date</Name>
+          <SourceAttributeID>Date</SourceAttributeID>
+        </Level>
+      </Levels>
+    </Hierarchy>
+    <Hierarchy dwd:design-time-name="db53d589-865e-4027-a40d-144ca691888f">
+      <ID>Year -  Week -  Date</ID>
+      <Name>Year -  Week -  Date</Name>
+      <Levels>
+        <Level dwd:design-time-name="cd706a6f-69f2-448a-9ecf-352f62ac1697">
+          <ID>Year</ID>
+          <Name>Year</Name>
+          <SourceAttributeID>Year</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="a523a765-c332-4b70-83a7-4e71af2781f1">
+          <ID>Week</ID>
+          <Name>Week</Name>
+          <SourceAttributeID>Week</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="7aaac233-9ad7-4b7d-9982-6e75007b316c">
+          <ID>Date</ID>
+          <Name>Date</Name>
+          <SourceAttributeID>Date</SourceAttributeID>
+        </Level>
+      </Levels>
+    </Hierarchy>
+  </Hierarchies>
+</Dimension>

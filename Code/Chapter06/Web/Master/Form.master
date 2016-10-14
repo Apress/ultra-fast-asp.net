@@ -1,0 +1,8 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/Master/Master.master"
+    AutoEventWireup="true" CodeFile="Form.master.cs" Inherits="Master_Form" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="BD" Runat="Server">
+ <form id="mainform" runat="server">
+   <asp:ContentPlaceHolder ID="IC" runat="server">
+   </asp:ContentPlaceHolder>
+ </form>
+</asp:Content>

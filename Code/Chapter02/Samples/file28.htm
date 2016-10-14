@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+<title>Chapter 2: File 28</title>
+<style type="text/css">
+.sp { background:url(csg.png); height:56px; width:56px; display:block }
+.sprite-right { position: absolute; top: 10; left: 10; background-position: 0 -172px } 
+</style>
+</head>
+<body>
+<a class="sp sprite-right" href="#" onclick="move(this)"></a>
+<script type="text/javascript">
+var req = null;
+var im = null;
+function move(obj) {
+    im = obj;
+    req = getreq();
+    if (req != null) {
+        try {
+            req.onreadystatechange = done;
+            req.open("GET", "ajax1.aspx", true);
+            req.send(null);
+        } catch (e) {
+            return null;
+        }
+    }
+}
+function getreq() {
+    if (window.XMLHttpRequest) {
+        req = new XMLHttpRequest();
+    } else if (window.ActiveXObject) {
+        req = new ActiveXObject("Microsoft.XMLHTTP");
+    }
+    return req;
+}
+function done() {
+    if ((req.readyState == 4) && (req.status == 200)) {
+        var resp = req.responseText.split(":");
+        var lf = parseInt(resp[1]);
+        im.style.top = resp[0] + "px";
+        im.style.left = lf + "px";
+    }
+}
+</script>
+</body>
+</html>

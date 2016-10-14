@@ -1,0 +1,20 @@
+﻿CREATE PRIMARY XML INDEX ProductIXML
+	ON [Products] ([Info])
+GO
+
+CREATE XML INDEX ProductPathIXML
+	ON [Products] ([Info])
+	USING XML INDEX ProductIXML
+	FOR PATH
+GO
+
+CREATE XML INDEX ProductPropIXML
+	ON [Products] ([Info])
+	USING XML INDEX ProductIXML
+	FOR PROPERTY
+GO
+
+CREATE XML INDEX ProductValueIXML
+	ON [Products] ([Info])
+	USING XML INDEX ProductIXML
+	FOR VALUE

@@ -1,0 +1,9 @@
+C:\Users\Rick\Desktop\Apress\23832ch0901d\code\SampleDB\sql\debug\Script.PreDeployment.sql
+C:\Users\Rick\Desktop\Apress\23832ch0901d\code\SampleDB\sql\debug\Script.PostDeployment.sql
+C:\Users\Rick\Desktop\Apress\23832ch0901d\code\SampleDB\sql\debug\Database.sqlsettings
+C:\Users\Rick\Desktop\Apress\23832ch0901d\code\SampleDB\sql\debug\Database.sqldeployment
+C:\Users\Rick\Desktop\Apress\23832ch0901d\code\SampleDB\sql\debug\Database.sqlcmdvars
+C:\Users\Rick\Desktop\Apress\23832ch0901d\code\SampleDB\sql\debug\SampleDB.deploymanifest
+C:\Users\Rick\Desktop\Apress\23832ch0901d\code\SampleDB\sql\debug\SampleDB.dbschema
+C:\Users\Rick\Desktop\Apress\23832ch0901d\code\SampleDB\sql\debug\Microsoft.SqlTypes.dbschema
+C:\Users\Rick\Desktop\Apress\23832ch0901d\code\SampleDB\obj\Debug\SampleDB.dbschema

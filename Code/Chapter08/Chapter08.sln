@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{4F174C21-8C12-11D0-8340-0000F80270F8}") = "Database", "Database\Database.dbp", "{88132232-44B2-43C6-ADFA-4A2EF8B0E2B0}"
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Samples", "Samples", "{5A935E7A-7575-41C5-8714-46373B8067BA}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFramework = "3.5"
+		Debug.AspNetCompiler.VirtualPath = "/Samples"
+		Debug.AspNetCompiler.PhysicalPath = "Samples\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\Samples\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/Samples"
+		Release.AspNetCompiler.PhysicalPath = "Samples\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\Samples\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "8902"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
+EndProject
+Project("{C8D11400-126E-41CD-887F-60BD40844F9E}") = "SampleDB", "SampleDB\SampleDB.dbproj", "{753BB55B-BFE2-4104-B846-F2D38BE6E259}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5A935E7A-7575-41C5-8714-46373B8067BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5A935E7A-7575-41C5-8714-46373B8067BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5A935E7A-7575-41C5-8714-46373B8067BA}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{5A935E7A-7575-41C5-8714-46373B8067BA}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{753BB55B-BFE2-4104-B846-F2D38BE6E259}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{753BB55B-BFE2-4104-B846-F2D38BE6E259}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{753BB55B-BFE2-4104-B846-F2D38BE6E259}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{753BB55B-BFE2-4104-B846-F2D38BE6E259}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{753BB55B-BFE2-4104-B846-F2D38BE6E259}.Release|Any CPU.Build.0 = Release|Any CPU
+		{753BB55B-BFE2-4104-B846-F2D38BE6E259}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

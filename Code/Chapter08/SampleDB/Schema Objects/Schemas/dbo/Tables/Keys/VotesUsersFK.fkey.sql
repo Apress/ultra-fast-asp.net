@@ -1,0 +1,3 @@
+﻿ALTER TABLE [dbo].[Votes]
+    ADD CONSTRAINT [VotesUsersFK] FOREIGN KEY ([UserId]) REFERENCES [dbo].[Users] ([UserId]) ON DELETE NO ACTION ON UPDATE NO ACTION;
+

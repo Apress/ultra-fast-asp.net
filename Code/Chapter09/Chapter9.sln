@@ -1,0 +1,72 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{C8D11400-126E-41CD-887F-60BD40844F9E}") = "SampleDB", "SampleDB\SampleDB.dbproj", "{9B4C6AA4-3D9B-4215-AABD-9534784AD206}"
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Web", "Web", "{F0D4B5C5-27B3-499D-A0D1-4025F874580D}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFramework = "3.5"
+		Debug.AspNetCompiler.VirtualPath = "/Web"
+		Debug.AspNetCompiler.PhysicalPath = "Web\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\Web\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/Web"
+		Release.AspNetCompiler.PhysicalPath = "Web\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\Web\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "50477"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
+EndProject
+Project("{D2ABAB84-BF74-430A-B69E-9DC6D40DDA17}") = "SampleCube", "SampleCube\SampleCube.dwproj", "{F79B3B26-39F9-43C1-94F3-FBC52CB168C7}"
+EndProject
+Project("{D183A3D8-5FD8-494B-B014-37F57B35E655}") = "SampleSSIS", "SampleSSIS\SampleSSIS.dtproj", "{070B3E0C-F7C9-4B25-95E9-9B5498DEDEC8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Development|Any CPU = Development|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9B4C6AA4-3D9B-4215-AABD-9534784AD206}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9B4C6AA4-3D9B-4215-AABD-9534784AD206}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9B4C6AA4-3D9B-4215-AABD-9534784AD206}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{9B4C6AA4-3D9B-4215-AABD-9534784AD206}.Development|Any CPU.ActiveCfg = Debug|Any CPU
+		{9B4C6AA4-3D9B-4215-AABD-9534784AD206}.Development|Any CPU.Build.0 = Debug|Any CPU
+		{9B4C6AA4-3D9B-4215-AABD-9534784AD206}.Development|Any CPU.Deploy.0 = Debug|Any CPU
+		{9B4C6AA4-3D9B-4215-AABD-9534784AD206}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9B4C6AA4-3D9B-4215-AABD-9534784AD206}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9B4C6AA4-3D9B-4215-AABD-9534784AD206}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{F0D4B5C5-27B3-499D-A0D1-4025F874580D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F0D4B5C5-27B3-499D-A0D1-4025F874580D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F0D4B5C5-27B3-499D-A0D1-4025F874580D}.Development|Any CPU.ActiveCfg = Debug|Any CPU
+		{F0D4B5C5-27B3-499D-A0D1-4025F874580D}.Development|Any CPU.Build.0 = Debug|Any CPU
+		{F0D4B5C5-27B3-499D-A0D1-4025F874580D}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{F0D4B5C5-27B3-499D-A0D1-4025F874580D}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{F79B3B26-39F9-43C1-94F3-FBC52CB168C7}.Debug|Any CPU.ActiveCfg = Development
+		{F79B3B26-39F9-43C1-94F3-FBC52CB168C7}.Debug|Any CPU.Build.0 = Development
+		{F79B3B26-39F9-43C1-94F3-FBC52CB168C7}.Debug|Any CPU.Deploy.0 = Development
+		{F79B3B26-39F9-43C1-94F3-FBC52CB168C7}.Development|Any CPU.ActiveCfg = Development
+		{F79B3B26-39F9-43C1-94F3-FBC52CB168C7}.Development|Any CPU.Build.0 = Development
+		{F79B3B26-39F9-43C1-94F3-FBC52CB168C7}.Development|Any CPU.Deploy.0 = Development
+		{F79B3B26-39F9-43C1-94F3-FBC52CB168C7}.Release|Any CPU.ActiveCfg = Development
+		{F79B3B26-39F9-43C1-94F3-FBC52CB168C7}.Release|Any CPU.Build.0 = Development
+		{F79B3B26-39F9-43C1-94F3-FBC52CB168C7}.Release|Any CPU.Deploy.0 = Development
+		{070B3E0C-F7C9-4B25-95E9-9B5498DEDEC8}.Debug|Any CPU.ActiveCfg = Development
+		{070B3E0C-F7C9-4B25-95E9-9B5498DEDEC8}.Debug|Any CPU.Build.0 = Development
+		{070B3E0C-F7C9-4B25-95E9-9B5498DEDEC8}.Development|Any CPU.ActiveCfg = Development
+		{070B3E0C-F7C9-4B25-95E9-9B5498DEDEC8}.Development|Any CPU.Build.0 = Development
+		{070B3E0C-F7C9-4B25-95E9-9B5498DEDEC8}.Release|Any CPU.ActiveCfg = Development
+		{070B3E0C-F7C9-4B25-95E9-9B5498DEDEC8}.Release|Any CPU.Build.0 = Development
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

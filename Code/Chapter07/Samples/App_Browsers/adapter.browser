@@ -1,0 +1,10 @@
+﻿<browsers>
+  <browser refID="Default">
+    <controlAdapters>
+      <adapter controlType="System.Web.UI.Page"
+               adapterType="Samples.MyPageAdapter" />
+      <!--      <adapter controlType="System.Web.UI.HtmlControls.HtmlForm"
+               adapterType="Samples.PostbackAdapter" />-->
+    </controlAdapters>
+  </browser>
+</browsers>

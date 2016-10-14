@@ -1,0 +1,9 @@
+﻿<browsers>
+  <browser refID="Default">
+    <controlAdapters>
+      <adapter controlType="System.Web.UI.WebControls.Image"
+               adapterType="Samples.ImageControlAdapter" />
+    </controlAdapters>
+  </browser>
+</browsers>
+

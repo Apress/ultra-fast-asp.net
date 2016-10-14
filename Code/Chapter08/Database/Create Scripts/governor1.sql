@@ -1,0 +1,27 @@
+﻿--Run these commands on the master database
+USE MASTER
+
+CREATE LOGIN vip WITH PASSWORD = 'Pass@Word1'
+
+CREATE RESOURCE POOL VipPool
+	WITH (MIN_CPU_PERCENT = 80,
+	MAX_CPU_PERCENT = 100)
+	
+CREATE WORKLOAD GROUP VipGroup USING "VipPool"
+
+CREATE FUNCTION classifier()
+	RETURNS SYSNAME
+	WITH SCHEMABINDING
+AS
+BEGIN
+	DECLARE @group SYSNAME
+	SET @group = 'default'
+	IF SUSER_NAME() = 'vip'
+		SET @group = 'VipGroup'
+	RETURN @group
+END
+
+ALTER RESOURCE GOVERNOR
+	WITH (CLASSIFIER_FUNCTION = [dbo].[classifier])
+	
+ALTER RESOURCE GOVERNOR RECONFIGURE

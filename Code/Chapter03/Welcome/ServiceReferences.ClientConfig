@@ -1,0 +1,17 @@
+﻿<configuration>
+    <system.serviceModel>
+        <bindings>
+            <customBinding>
+                <binding name="CustomBinding_LoginService">
+                    <binaryMessageEncoding />
+                    <httpTransport maxReceivedMessageSize="2147483647" maxBufferSize="2147483647" />
+                </binding>
+            </customBinding>
+        </bindings>
+        <client>
+            <endpoint address="http://localhost:14751/Samples/LoginService.svc"
+                binding="customBinding" bindingConfiguration="CustomBinding_LoginService"
+                contract="LoginReference.LoginService" name="CustomBinding_LoginService" />
+        </client>
+    </system.serviceModel>
+</configuration>

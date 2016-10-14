@@ -1,0 +1,41 @@
+# Microsoft Developer Studio Project File - Database Project
+Begin DataProject = "Database"
+   MSDTVersion = "80"
+   DefDBRef = "localhost.Sample.dbo"
+   Begin Folder = "Change Scripts"
+   End
+   Begin Folder = "Create Scripts"
+      Script = "broker1.sql"
+      Script = "config1.sql"
+      Script = "config2.sql"
+      Script = "create1.sql"
+      Script = "create2.sql"
+      Script = "create3.sql"
+      Script = "governor1.sql"
+      Script = "governor2.sql"
+      Script = "index1.sql"
+      Script = "index2.sql"
+      Script = "index3.sql"
+      Script = "index4.sql"
+      Script = "index5.sql"
+      Script = "paging1.sql"
+      Script = "paging2.sql"
+      Script = "partition1.sql"
+      Script = "partition2.sql"
+      Script = "partition3.sql"
+      Script = "search1.sql"
+      Script = "xml1.sql"
+      Script = "xml2.sql"
+      Script = "xml3.sql"
+      Script = "xml4.sql"
+   End
+   Begin DBRefFolder = "Database References"
+      Begin DBRefNode = "localhost.Sample.dbo"
+         ConnectStr = "Data Source=localhost;Initial Catalog=Sample;Integrated Security=True"
+         Provider = "{91510608-8809-4020-8897-FBA057E22D54}"
+         Colorizer = 6
+      End
+   End
+   Begin Folder = "Queries"
+   End
+End

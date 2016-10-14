@@ -1,0 +1,332 @@
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="0b16f421-51c1-47f5-8cfc-f9d05862215d" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Sample</ID>
+  <MeasureGroups>
+    <MeasureGroup>
+      <ID>Votes</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="2b050781-4ea1-4fd2-82f1-a0f05dec06ae">
+          <ID>Votes</ID>
+          <Name>Votes</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="6952980f-ab25-404c-b97f-e69f6b463a43">
+            <DataSourceViewID>Sample</DataSourceViewID>
+            <TableID>dbo_Votes</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <ProactiveCaching dwd:design-time-name="226ab441-958a-47a5-9efd-54cff6ae9e9e">
+            <SilenceInterval>PT10S</SilenceInterval>
+            <Latency>-PT1S</Latency>
+            <SilenceOverrideInterval>PT10M</SilenceOverrideInterval>
+            <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
+            <Enabled>true</Enabled>
+            <OnlineMode>OnCacheComplete</OnlineMode>
+            <AggregationStorage>MolapOnly</AggregationStorage>
+            <Source xsi:type="ProactiveCachingTablesBinding" dwd:design-time-name="336f6b25-4fa7-421c-bfdf-013af098cac2">
+              <NotificationTechnique>Server</NotificationTechnique>
+              <TableNotifications>
+                <TableNotification>
+                  <DbTableName>Items</DbTableName>
+                  <DbSchemaName>dbo</DbSchemaName>
+                </TableNotification>
+                <TableNotification>
+                  <DbTableName>Users</DbTableName>
+                  <DbSchemaName>dbo</DbSchemaName>
+                </TableNotification>
+                <TableNotification>
+                  <DbTableName>Votes</DbTableName>
+                  <DbSchemaName>dbo</DbSchemaName>
+                </TableNotification>
+              </TableNotifications>
+            </Source>
+          </ProactiveCaching>
+          <EstimatedRows>5000002</EstimatedRows>
+          <AggregationDesignID>AggregationDesign</AggregationDesignID>
+        </Partition>
+      </Partitions>
+      <AggregationDesigns>
+        <AggregationDesign>
+          <ID>AggregationDesign</ID>
+          <Name>AggregationDesign</Name>
+          <CreatedTimestamp>2009-07-19T18:56:37Z</CreatedTimestamp>
+          <LastSchemaUpdate>2009-07-19T18:56:37Z</LastSchemaUpdate>
+          <EstimatedRows>5000002</EstimatedRows>
+          <Dimensions>
+            <Dimension>
+              <CubeDimensionID>Users</CubeDimensionID>
+              <Attributes>
+                <Attribute>
+                  <AttributeID>User Id</AttributeID>
+                  <EstimatedCount>50000</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>User Name</AttributeID>
+                </Attribute>
+              </Attributes>
+            </Dimension>
+            <Dimension>
+              <CubeDimensionID>Items</CubeDimensionID>
+              <Attributes>
+                <Attribute>
+                  <AttributeID>Item Id</AttributeID>
+                  <EstimatedCount>2500</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Item Name</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Item Category</AttributeID>
+                  <EstimatedCount>6</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Item Subcategory</AttributeID>
+                </Attribute>
+              </Attributes>
+            </Dimension>
+            <Dimension>
+              <CubeDimensionID>Time</CubeDimensionID>
+              <Attributes>
+                <Attribute>
+                  <AttributeID>Date</AttributeID>
+                  <EstimatedCount>455</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Year</AttributeID>
+                  <EstimatedCount>456</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Half Year</AttributeID>
+                  <EstimatedCount>456</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Quarter</AttributeID>
+                  <EstimatedCount>456</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Month</AttributeID>
+                  <EstimatedCount>456</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Week</AttributeID>
+                  <EstimatedCount>456</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Day Of Year</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Day Of Half Year</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Day Of Quarter</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Day Of Month</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Day Of Week</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Week Of Year</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Month Of Year</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Month Of Half Year</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Month Of Quarter</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Quarter Of Year</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Quarter Of Half Year</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Half Year Of Year</AttributeID>
+                </Attribute>
+              </Attributes>
+            </Dimension>
+          </Dimensions>
+          <Aggregations>
+            <Aggregation>
+              <ID>Aggregation 0</ID>
+              <Name>Aggregation 0</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>Users</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Items</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Item Id</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Time</CubeDimensionID>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 1</ID>
+              <Name>Aggregation 1</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>Users</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Items</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Item Category</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Time</CubeDimensionID>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 2</ID>
+              <Name>Aggregation 2</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>Users</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Items</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Item Category</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Time</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Date</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 3</ID>
+              <Name>Aggregation 3</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>Users</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>User Id</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Items</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Item Category</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Time</CubeDimensionID>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 4</ID>
+              <Name>Aggregation 4</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>Users</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Items</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Time</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Date</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 5</ID>
+              <Name>Aggregation 5</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>Users</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Items</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Time</CubeDimensionID>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 6</ID>
+              <Name>Aggregation 6</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>Users</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>User Id</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Items</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Time</CubeDimensionID>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 7</ID>
+              <Name>Aggregation 7</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>Users</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Items</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Item Id</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Time</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Date</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+          </Aggregations>
+        </AggregationDesign>
+      </AggregationDesigns>
+    </MeasureGroup>
+  </MeasureGroups>
+</Cube>

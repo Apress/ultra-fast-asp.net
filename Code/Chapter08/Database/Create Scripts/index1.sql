@@ -1,0 +1,20 @@
+﻿CREATE TABLE ind (
+	v1	INT IDENTITY,
+	v2	INT,
+	v3	VARCHAR(64)
+)
+GO
+
+DECLARE @i INT
+SET @i = 0
+WHILE (@i < 500000)
+BEGIN
+	INSERT INTO ind
+		(v2, v3)
+		VALUES
+		(@i * 2, 'test')
+	SET @i = @i + 1
+END
+GO
+
+DBCC SHOWCONTIG (ind) WITH ALL_INDEXES

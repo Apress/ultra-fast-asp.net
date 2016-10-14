@@ -1,0 +1,29 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+<title>Chapter 2, File 15</title>
+</head>
+<body onload="getlogo()">
+<style type="text/css">
+.hdr{border:1px solid #000;height:40px;background:url(top-grad.gif)}
+#txtlogo{font-family:lucida handwriting,cursive;font-size:32px;color:#fff;padding:3px}
+#txtlogo span{color:yellow}
+</style>
+<div class="hdr">
+<span id="txtlogo"><span>12</span> Titanx</span>
+</div>
+<script type="text/javascript">
+var limg;
+function getlogo() {
+    limg = new Image(250, 40);
+    limg.onload = gotlogo;
+    limg.src = "logo.png";
+}
+function gotlogo() {
+    var logo = document.getElementById("txtlogo");
+    logo.parentNode.replaceChild(limg, logo);
+}
+</script>
+</body>
+</html>
